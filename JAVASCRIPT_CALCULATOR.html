@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;-->
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="JAVASCRIPT_CALCULATOR.css">
+</head>
+<body>
+ <div id="outer">
+  <h1>JavaScript Calculator</h1>
+  <div id="main">
+      <form action="">
+          <input type="text" id="display" disabled>
+          <br>
+          <input type="button" value="C" id="buttons"   onClick="addtoscreen('C')">
+          <input type="button" value="CE" id="buttons"  onClick="backspace()">
+          <input type="button" value="x^2" id="buttons" onClick="power()">
+          <input type="button" value="+" id="buttons"   onClick="addtoscreen('+')">
+          <br>
+          <input type="button" value="7" id="buttons"   onClick="addtoscreen('7')">
+          <input type="button" value="9" id="buttons"   onClick="addtoscreen('9')">
+          <input type="button" value="8" id="buttons"   onClick="addtoscreen('8')">
+          <input type="button" value="-" id="buttons"   onClick="addtoscreen('-')">
+          <br>
+          <input type="button" value="4" id="buttons"   onClick="addtoscreen('4')">
+          <input type="button" value="5" id="buttons"   onClick="addtoscreen('5')">
+          <input type="button" value="6" id="buttons"   onClick="addtoscreen('6')">
+          <input type="button" value="*" id="buttons"   onClick="addtoscreen('*')">
+          <br>
+           <input type="button" value="1" id="buttons"  onClick="addtoscreen('1')">
+          <input type="button" value="2" id="buttons"   onClick="addtoscreen('2')">
+          <input type="button" value="3" id="buttons"   onClick="addtoscreen('3')">
+          <input type="button" value="/" id="buttons"   onClick="addtoscreen('/')">
+          <br>
+          <input type="button" value="0" id="buttons"   onClick="addtoscreen('0')">
+          <input type="button" value="." id="buttons"   onClick="addtoscreen('.')">
+          <input type="button" value="=" id="equal"     onClick="answer()">
+          
+      </form>
+      <h3>JS Calculator</h3>
+    
+  </div>  
+    </div>
+    <script src='JAVASCRIPT_CALCULATORjs.js'></script>
+</body>
+</html>
